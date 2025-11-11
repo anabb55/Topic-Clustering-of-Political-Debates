@@ -38,16 +38,14 @@ The result was a sparse matrix where each debate is represented by a weighted ve
 
 ## K-Means Clustering and Silhouette Score
 
-To identify natural groupings, I used the **K-Means** algorithm.  
-The optimal number of clusters (*k*) was selected based on the **silhouette score**, which measures how well each document fits within its cluster compared to others.  
+To identify natural groupings, I used the **K-Means** algorithm. The optimal number of clusters (*k*) was selected based on the **silhouette score**, which measures how well each document fits within its cluster compared to others.  
 The best-scoring *k* defined the final number of clusters, and the **top keywords** were extracted for each one to describe its theme.
 
 ---
 
 ## Visualization with PCA
 
-For visual interpretation, **Principal Component Analysis (PCA)** reduced the high-dimensional TF-IDF data to two components.  
-The resulting 2D plot shows how debates group together, with colors representing clusters.
+For visual interpretation, **Principal Component Analysis (PCA)** reduced the high-dimensional TF-IDF data to two components. The resulting 2D plot shows how debates group together, with colors representing clusters.
 
 ---
 
