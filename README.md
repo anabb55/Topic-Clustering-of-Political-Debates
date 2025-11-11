@@ -20,13 +20,19 @@ This ensured that the dataset was consistent and ready for vectorization.
 
 ## TF-IDF Vectorization
 
-The cleaned text was converted into numerical form using **TF-IDF**, which highlights informative terms.  
-Key parameters:
-- 3000 most relevant terms  
-- Unigrams and bigrams included  
-- English stop words removed  
+After preprocessing, the text was transformed into numerical features using **TF-IDF (Term Frequency–Inverse Document Frequency)**.  
+TF-IDF measures how important a word is within a document relative to the entire collection of documents.  
+- Words that appear frequently in one debate but rarely across others receive higher weights,  
+- While common words that appear in nearly all documents are downweighted.  
 
-The output was a sparse matrix representing word importance across debates.
+This representation captures the distinctiveness of terms and provides a meaningful basis for clustering.
+
+Key parameters:
+- Limited to 3000 most informative terms  
+- Included both unigrams and bigrams  
+- Removed English stop words  
+
+The result was a sparse matrix where each debate is represented by a weighted vector of term importance.
 
 ---
 
