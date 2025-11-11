@@ -36,7 +36,7 @@ The result was a sparse matrix where each debate is represented by a weighted ve
 
 ---
 
-## 🔍 K-Means Clustering and Silhouette Score
+## K-Means Clustering and Silhouette Score
 
 To discover hidden patterns in the debates, I applied **K-Means clustering**, an algorithm that groups documents based on their textual similarity.  
 Because the number of clusters (*k*) was not known in advance, I tested multiple values and evaluated them using the **silhouette score** — a metric that indicates how well each text fits into its assigned cluster compared to others.  
@@ -46,7 +46,7 @@ After clustering, I analyzed the **top keywords** for each group to interpret th
 
 ---
 
-## 🎨 Visualization with PCA
+## Visualization with PCA
 
 To better understand the structure of the clusters, I used **Principal Component Analysis (PCA)** to reduce the high-dimensional TF-IDF vectors into two components.  
 The resulting **2D scatter plot** clearly illustrates how debates form distinct clusters, where each color corresponds to a different thematic group.  
